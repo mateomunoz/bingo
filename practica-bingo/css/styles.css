@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: #111;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+}
+
+.bingo {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  gap: 0.5rem;
+}
+
+.bingo-number,
+.board-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid aliceblue;
+  width: 50px;
+  height: 50px;
+}
+
+.bingo-marked {
+  background-color: orange;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.user-board {
+  margin-bottom: 2rem;
+}
+
+.user-number-marked {
+  background-color: steelblue;
+}
+
+.pc-number-marked {
+  background-color: salmon;
+}
